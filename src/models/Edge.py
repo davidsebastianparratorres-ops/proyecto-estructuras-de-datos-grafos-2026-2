@@ -5,5 +5,4 @@ from dataclasses import dataclass
 
 class Edge(ABC):
     id:str
-    origin:str
     destiny:str
