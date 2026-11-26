@@ -1,6 +1,9 @@
-from dataclasses import dataclass
+from enum import enum
 
 
-@dataclass
-class TypeSoldier:
-    pass
+
+class TypeSoldier(str,enum):
+    
+    INFANTRY = "infantry"
+    SNIPER = "sniper"
+    ARTILLERY = "artillery"

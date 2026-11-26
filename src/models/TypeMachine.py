@@ -1,6 +1,7 @@
-from dataclasses import dataclass
+from enum import enum
 
-
-@dataclass
-class TypeMachine:
-    pass
+class TypeMachine(str,enum):
+    
+    TANK = "tank"
+    TRUCK = "truck"
+    ROBOT_SOLDIER = "robot_soldier"
