@@ -4,4 +4,5 @@ from src.models.Edge import Edge
 
 @dataclass
 class Road(Edge):
-    time:float
+    walk_time:float
+    moto_time:float
