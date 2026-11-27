@@ -1,0 +1,123 @@
+{
+  "scenario_name": "Escenario Básico de Prueba",
+  "graph_e": {
+    "base": {
+      "id": "B1",
+      "x_coord": 0.0,
+      "y_coord": 0.0
+    },
+    "towers": [
+      {
+        "id": "T1",
+        "x_coord": 10.0,
+        "y_coord": 0.0,
+        "surveillance_radius": 8.0,
+        "height": 12.0,
+        "is_built": false
+      },
+      {
+        "id": "T2",
+        "x_coord": 0.0,
+        "y_coord": 10.0,
+        "surveillance_radius": 10.0,
+        "height": 15.0,
+        "is_built": false
+      },
+      {
+        "id": "T3",
+        "x_coord": 10.0,
+        "y_coord": 10.0,
+        "surveillance_radius": 9.0,
+        "height": 14.0,
+        "is_built": false
+      }
+    ],
+    "roads": [
+      {
+        "id": "R1",
+        "origin": "B1",
+        "destiny": "T1",
+        "walk_time": 4.0,
+        "moto_time": 1.5
+      },
+      {
+        "id": "R2",
+        "origin": "B1",
+        "destiny": "T2",
+        "walk_time": 2.0,
+        "moto_time": 1.0
+      },
+      {
+        "id": "R3",
+        "origin": "T2",
+        "destiny": "T1",
+        "walk_time": 1.0,
+        "moto_time": 0.5
+      },
+      {
+        "id": "R4",
+        "origin": "T1",
+        "destiny": "T3",
+        "walk_time": 5.0,
+        "moto_time": 2.0
+      },
+      {
+        "id": "R5",
+        "origin": "T2",
+        "destiny": "T3",
+        "walk_time": 8.0,
+        "moto_time": 3.0
+      }
+    ],
+    "soldiers": [
+      {
+        "id": "S1",
+        "location_id": "B1"
+      },
+      {
+        "id": "S2",
+        "location_id": "B1"
+      },
+      {
+        "id": "S3",
+        "location_id": "B1"
+      }
+    ]
+  },
+  "graph_m": {
+    "vertices": [
+      {
+        "id": "M1",
+        "x_coord": -5.0,
+        "y_coord": 5.0,
+        "type": "entry"
+      },
+      {
+        "id": "M2",
+        "x_coord": 5.0,
+        "y_coord": 5.0,
+        "type": "waypoint"
+      },
+      {
+        "id": "M3",
+        "x_coord": 15.0,
+        "y_coord": 5.0,
+        "type": "exit"
+      }
+    ],
+    "edges": [
+      {
+        "id": "E1",
+        "origin": "M1",
+        "destiny": "M2",
+        "weight": 4.0
+      },
+      {
+        "id": "E2",
+        "origin": "M2",
+        "destiny": "M3",
+        "weight": 4.0
+      }
+    ]
+  }
+}
